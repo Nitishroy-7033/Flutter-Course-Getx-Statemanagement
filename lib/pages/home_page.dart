@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_learning/controllers/home_page_controller.dart';
+import 'package:getx_learning/pages/about_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,6 +43,13 @@ class HomePage extends StatelessWidget {
               },
               label: Text("Save"),
               icon: Icon(Icons.save),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Get.to(AboutPage());
+              },
+              child: Text("Go to About Page"),
             ),
           ],
         ),
