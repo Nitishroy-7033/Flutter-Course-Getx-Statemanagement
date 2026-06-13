@@ -11,6 +11,7 @@ var myTheme = ThemeData(
     brightness: Brightness.light,
     primaryContainer: AppColors.primaryContainer,
     secondaryContainer: AppColors.secondaryContainer,
+    onSecondaryContainer: AppColors.onSecondaryContainer,
     onSurface: AppColors.onSurface,
     error: AppColors.error,
     onError: AppColors.onError,

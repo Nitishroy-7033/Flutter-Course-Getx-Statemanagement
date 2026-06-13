@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_learning/Catelog.dart';
 import 'package:getx_learning/config/app_theme.dart';
 import 'package:getx_learning/pages/home_page.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: myTheme,
-      home: HomePage(),
+      home: Catelog(),
     );
   }
 }
