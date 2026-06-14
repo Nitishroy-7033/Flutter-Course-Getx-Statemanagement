@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_learning/controllers/home_page_controller.dart';
 import 'package:getx_learning/pages/about_page.dart';
+import 'package:getx_learning/pages/get_builder_page.dart';
+import 'package:getx_learning/pages/get_workers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -47,9 +49,21 @@ class HomePage extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                Get.to(AboutPage());
+                // Get.to(AboutPage());
               },
               child: Text("Go to About Page"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(GetBuilderPage());
+              },
+              child: Text("Go to Get Builder"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(GetWorkersPage());
+              },
+              child: Text("Getx Workers"),
             ),
           ],
         ),
